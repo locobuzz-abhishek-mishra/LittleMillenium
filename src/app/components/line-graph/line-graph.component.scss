@@ -11,3 +11,16 @@
     box-shadow: 0 20px 20px rgba(0, 0, 0, .16)
   }
 }
+.chart-container {
+  position: relative;
+ 
+}
+
+.chart-title {
+  font-size: 20px;
+  font-weight: 500;
+  color: #333;
+  position: absolute;
+  top: 20px;
+  left: 35px;
+}

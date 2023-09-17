@@ -6,6 +6,7 @@ import * as Chart from 'chart.js';
   styleUrls: ['./line-graph.component.scss']
 })
 export class LineGraphComponent implements OnInit {
+ 
 
   constructor() { }
 
@@ -14,6 +15,7 @@ export class LineGraphComponent implements OnInit {
         this.createLineChart();
     },500)
   }
+  
   createLineChart() {
       new Chart('line-graph', {
                 type: 'line',
@@ -59,8 +61,8 @@ export class LineGraphComponent implements OnInit {
                         }
                     },
                     title: {
-                        display: true,
-                        text: 'LittleMillenium GRAPH '
+                        display: true,// Optional: Adjust font style
+                        padding: 25,
                     }
                 }
         })
