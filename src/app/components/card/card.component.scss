@@ -1,6 +1,11 @@
 .card{
     &__row{
-        display: flex;
-        justify-content: space-evenly;
+        display: flex;    
+        flex-wrap: wrap;
+        &__field{
+            flex: 1 1 20%;
+            padding:10px;
+            max-width: 285px;
+        }
     }
 }
