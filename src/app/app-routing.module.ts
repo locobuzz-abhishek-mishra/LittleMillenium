@@ -3,7 +3,8 @@ import { RouterModule, Routes } from '@angular/router';
 import { appRoutes } from './lazyloader.routes';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
 
-const routes: Routes = [   
+const routes: Routes = [
+  { path: '', redirectTo: '/report', pathMatch: 'full' },   
   {path: '', component: DashboardComponent},
 ]
 @NgModule({
