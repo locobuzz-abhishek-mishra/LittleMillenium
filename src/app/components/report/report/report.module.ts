@@ -17,6 +17,7 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatInputModule } from '@angular/material/input';
 import {MatDatepickerModule} from '@angular/material/datepicker';
 import { MatNativeDateModule } from '@angular/material/core';
+import { FooterComponent } from '../../footer/footer.component';
 
 export const ROUTES: Routes = [
   { path: '', component:ReportComponent }, 
@@ -27,7 +28,8 @@ export const ROUTES: Routes = [
     ReportComponent,
     LineGraphComponent,
     TableComponent,
-    CardComponent
+    CardComponent,
+    FooterComponent
   ],
   imports: [
     CommonModule,

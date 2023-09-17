@@ -1,0 +1,18 @@
+.footer{
+    display: flex;
+    font-size: 10px;
+    flex-direction: row;
+    height: 2rem;
+    &__left{
+        flex: 1 0 30%;
+    }
+    &__right{
+            display: flex;
+            width: 20%;
+            justify-content: space-evenly;
+            justify-items: flex-end;
+            flex-direction: row;
+            flex: 1 0 -5%;  
+    }
+
+}
