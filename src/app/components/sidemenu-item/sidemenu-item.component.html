@@ -1,0 +1,15 @@
+<mat-nav-list [ngClass]="{'secondaryMenu': secondaryMenu, 'primary': !secondaryMenu}">
+  <mat-list-item *ngIf='menu.link==false' (click)='menu.open = !menu.open' class="list">
+    <mat-icon matListIcon iconsmall>{{menu.icon}} </mat-icon>
+    <h3 matLine *ngIf='!iconOnly'>{{ menu.name }} </h3>
+    <mat-icon *ngIf='true' class='sidenav-dropdown-indicator rotate '
+              [ngClass]="{'indicateOpen':menu.open}"> expand_more
+    </mat-icon>
+  </mat-list-item>
+
+  <mat-list-item *ngIf='menu.link!=false' (click)='menu.open = !menu.open' [routerLink]='[menu.link]' class="list" [routerLink]='[menu.link]'>
+    <mat-icon matListIcon iconsmall>{{menu.icon}} </mat-icon>
+    <h3 matLine *ngIf='!iconOnly'>{{ menu.name }} </h3>
+  </mat-list-item>
+
+</mat-nav-list>

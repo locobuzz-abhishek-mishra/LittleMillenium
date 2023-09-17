@@ -1,0 +1,45 @@
+.report{
+    // display: flex;
+    // flex-direction: column;
+    margin: 10px;
+    height: 100%;
+    overflow: auto;
+    background-color: aliceblue;
+    &__header{
+        display: flex;
+        flex-direction: row;
+        margin: 10px;
+        & .title{
+            width:auto;
+            font-size: 30px;
+            margin: 10px;
+            font-weight: 500;
+        }
+        & .calender{
+            margin-left: auto;
+            width: 9rem;
+            text-align: center;
+            border-radius: 10px;
+        }
+        & .download{
+            margin-left: 10px;
+            width: 30px;
+            height: 30px;
+            text-align: center;
+            box-shadow: 1px 1px 1px 1px lightgray;
+            background: white;
+            border-radius: 50%;
+            padding: 10px;
+            z-index: 20;
+        }
+    }
+}
+
+.example-full-width{
+    width: 125px;
+    height: 55px;
+}
+
+::ng-deep .mat-form-field-appearance-outline.mat-form-field-disabled .mat-form-field-outline {
+    opacity: 0;
+}

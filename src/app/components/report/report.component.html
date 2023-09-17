@@ -1,0 +1,29 @@
+
+    <div class="report">
+        <div fxLayout="row" fxLayout="row wrap">
+            <div class="report__header" >
+                <div class="title" fxFlex="100" >
+                      Chart
+                </div>
+                <div class="calender" fxFlex="100" >
+                        <mat-form-field class="example-full-width" appearance="outline" style="background-color: white;">
+                            <input matInput [min]="minDate" [max]="maxDate" [matDatepicker]="picker" >
+                            <mat-datepicker-toggle matSuffix  [for]="picker"></mat-datepicker-toggle>
+                            <mat-datepicker #picker></mat-datepicker>
+                          </mat-form-field>  
+                </div>
+                <div class="download" fxFlex="100" >
+                       <mat-icon>download</mat-icon>
+                </div>
+            </div>
+        </div>
+        <div fxLayout="row" fxLayout="row wrap">
+            <app-card fxFlex="100" fxFlex.lt-sm="100" fxFlex.sm="50"></app-card>
+        </div>
+        <div fxLayout="row" fxLayout="row wrap">
+            <app-line-graph fxFlex="100" fxFlex.lt-sm="100" fxFlex.sm="50"></app-line-graph>
+        </div>
+        <div fxLayout="row" fxLayout="row wrap">
+            <app-table fxFlex="100" fxFlex.lt-sm="100" fxFlex.sm="50"></app-table>
+        </div>
+    </div>
